@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -27,7 +28,6 @@ public class Hangman {
 
         execute();
     }
-
 
     private void execute() {
         updateInfo();
@@ -78,6 +78,11 @@ public class Hangman {
 
         if (!Character.isAlphabetic(newChar)) {
             System.out.println("You must guess a letter.");
+            return false;
+        }
+
+        if (!Character.isLowerCase(newChar)) {
+            System.out.println("Your guess must be lowercase.");
             return false;
         }
 
