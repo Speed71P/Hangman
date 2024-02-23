@@ -95,12 +95,11 @@ public class Hangman {
             if (charredWord[i] == newChar) {
                 hitLetters[i] = newChar;
                 isCorrect = true;
+                hits++;
             }
         }
 
-        if (isCorrect) {
-            hits++;
-        } else {
+        if (!isCorrect) {
             misses++;
         }
 
