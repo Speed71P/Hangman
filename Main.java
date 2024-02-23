@@ -1,0 +1,13 @@
+import java.util.Random;
+
+public class Main {
+
+    private static Random random = new Random();
+    
+    // current list of words, provided by my teacher. Looking to get my own.
+    private static String[] wordList = {"matron", "neighboring", "battleship","desperation","fighter","effect","catalyst","undisturbed","metropolis","orientation","outburst","shimmer","aggressive","multiplicity","reassemble","making","kickback","lighted","watermelon","beginning","disproportionate","dealership","epistemology","frustration","glacier","first","substandard","automated","policy","strangeness","coding","forage","charade","placement","extinct","strapping","collect","american","disturbance","invention","hangover","warden","windmill","illusory","counter","doctorate","roleplaying","proffer","hatchery","awkwardness","affordability","technical","transit","switch","literate","idyllic","arthritis","pervasive","plaster","miraculous","baking","puncture","matchup","resentment","diehard","ruling","embryo","discouraging","moisturizer","acculturation","abstain","fiasco","socialism","creditor","boardroom","misuse","varsity","frozen","pricing","passivity","maximum","biotechnology","modernism","pardon","passenger","striker","damage","forego","muster","carnage","humiliating","unanswered","vocation","payout","interview","ancestor","evaluate","preoperative","animate","handbag","exhilarating","burdensome","workable","tariff","seaweed","restrict","orbital","courier","refinement","deregulation","inverse","discontinuity","disconnect","conundrum","incompetent","circumstantial","completion","binary","lingerie","leftover","broiler","meditation","podium","authoritarian","dialectic","emigration","entrench","reverse","projection","treatment","subjectivity","nemesis","downtown","oratory","passer","empire","unassuming","spotty","partner","occasion","staging","distinguish","statutory","reflective","delegate","neoclassical","antiquated","handle","decreasing","heavy","windfall","greasy","adjoin","serpent","impunity","advisor","replicate","carbohydrate","placate","billing","overlay","optical","battle","swimming","rapture","curator","farmland","believer","corresponding","restoration","echelon","coaster","homicide","dagger","accountant","respite","treason","plethora","squadron","branching","salient","accomplice","misbehavior","porcelain","empathy","loneliness","loving"};
+
+    public static void main(String[] args) {
+        new Hangman(wordList[random.nextInt(wordList.length)]);
+    }
+}
